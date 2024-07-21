@@ -1,8 +1,8 @@
-llama-index-0.10.56
-llama-index-llms-together-0.1.3
+llama-index
+llama-index-llms-together
 instructor
 matplotlib
 openai
-streamlit-1.36.0
-python-dotenv-1.0.1
+streamlit
+python-dotenv
 graphviz
