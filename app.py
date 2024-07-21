@@ -22,17 +22,17 @@ if "img_base64" not in st.session_state:
 
 
 def home():
-    col1 , col2, col3 = st.columns(3)
+    col1 , col2, col3  = st.columns(3)
     with col1:
         st.write("\n\n\n\n")
-        st.image("logo.png", width=100)
+        st.image("logo.png", width=130)
     with col2:
         st.title("Chart Generator")
     
     st.write("\n\n\n\n\n\n\n\n\n")
     st.write("\n\n\n\n\n\n\n\n\n")
     st.write("\n\n\n\n\n\n\n\n\n")
-    
+
     st.write("Selct the type of chart you want to generate")
     col1, col2 = st.columns(2)
     
