@@ -1,9 +1,7 @@
-import os
 import streamlit as st
 from dotenv import load_dotenv
 from src.Chatbot.gantt_bot import Bot as GanttBot
 from src.Chatbot.pert_bot import Bot as PertBot
-import base64
 
 load_dotenv()
 
@@ -21,9 +19,24 @@ if "pert_bot" not in st.session_state:
 if "img_base64" not in st.session_state:
     st.session_state.img_base64 = ""
 
+st.markdown(
+    """
+<style>
+button {
+    height: 100px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
+
 def home():
     st.title("Chart Generator Bot")
-    st.write("Choose a chart generator from the options below.")
+    st.write("Selct the type of chart you want to generate")
+    st.write("\n\n\n\n\n\n\n\n\n")
     col1, col2 = st.columns(2)
     with col1:
         if st.button("Gantt Chart Generator"):
