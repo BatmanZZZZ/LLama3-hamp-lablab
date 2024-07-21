@@ -19,18 +19,6 @@ if "pert_bot" not in st.session_state:
 if "img_base64" not in st.session_state:
     st.session_state.img_base64 = ""
 
-st.markdown(
-    """
-<style>
-button {
-    height: 100px !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-}
-</style>
-""",
-    unsafe_allow_html=True,
-)
 
 
 def home():
